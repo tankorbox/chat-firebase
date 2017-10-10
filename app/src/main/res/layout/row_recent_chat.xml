@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="0.5dp"
+    android:layout_marginBottom="0.5dp"
+    android:background="@color/cardview_light_background">
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/avatar_default" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left">
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:text="name"
+                android:textColor="@color/black"
+                android:alpha="0.87"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tvLastedMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/tvName"
+                android:gravity="center|left"
+                android:text="message"
+                android:textStyle="italic"
+                android:textColor="@color/blacklight"
+                android:alpha="0.5"
+                android:textSize="13sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="13sp"
+                android:text="Time"
+                android:textColor="@color/black"
+                android:alpha="0.7"
+                android:id="@+id/tvTime"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+</LinearLayout>

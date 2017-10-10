@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BKT4 ChatApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_chat">Recent</string>
+    <string name="text_online_list">Friends</string>
+    <string name="text_group_chat">Groups</string>
+    <string name="text_personal">Personal</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.4"
+        android:text=""
+        android:id="@+id/tvTime"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/tvTime"
+        android:id="@+id/ivAvatarLeft"
+        android:src="@drawable/icon_ava_default"
+        android:background="@drawable/shape_circle"/>
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_toRightOf="@+id/ivAvatarLeft"
+        android:layout_below="@id/tvTime"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/purple_chat_button"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Medium Text"
+        android:textSize="16sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+</RelativeLayout>

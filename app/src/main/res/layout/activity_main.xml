@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context="com.example.tan.finalproject.activities.MainActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_full_round"
+                android:hint="Search..."
+                android:maxLength="30"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/primary" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigationBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/primary"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/menu_bottom_navigation">
+
+        </android.support.design.widget.BottomNavigationView>
+
+        <FrameLayout
+            android:id="@+id/frContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/navigationBottom"
+            android:layout_below="@+id/toolbar"
+            android:background="#E5E5E5"
+            android:elevation="2dp"></FrameLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
